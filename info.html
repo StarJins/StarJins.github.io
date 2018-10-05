@@ -1,191 +1,193 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
-    <title>StarJins's Homepage</title>
-    <style>
+    <head>
+        <title>StarJins's Homepage</title>
+        <style>
 
-      body {
-        font-family: "맑은 고딕", sans-serif;
-	    font-size: 20px;
-	    font-weight: bold;
-	    background-color: #f7f7f7;
-      }
-      #allContent {
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+            body {
+                font-family: "맑은 고딕", sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                background-color: #f7f7f7;
+            }
+            #allContent {
+                width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-      /* 홈페이지 타이틀 */
-      #logo a {
-          text-decoration: none;
-          color: black;
-      }
-      #title {
-        text-align: center;
-        margin: 0px;
-        margin-bottom: 10px;
-        font-size: 50px;
-      }
+            /* 홈페이지 타이틀 */
+            #logo a {
+                text-decoration: none;
+                color: black;
+            }
+            #title {
+                text-align: center;
+                margin: 0px;
+                margin-bottom: 10px;
+                font-size: 50px;
+            }
 
-      /* 네비게이션 메뉴 */
-      #mainMenu {
-        line-height: 40px;
-      }
-      ul {
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-        background-color: #2d2d2d;
-      }
-      ul.navi li {
-        display: inline;
-        padding: 0px;
-        margin: 0px;
-      }
-      ul.navi li a {
-        color: white;
-        text-decoration: none;
-        padding-top: 6px;       /* hover시 배경색을 알맞게 변경하기 위해 padding 설정 */
-        padding-bottom: 7px;
-        padding-left: 74px;
-        padding-right: 75px;
-        margin: 0px;
-      }
-      ul.navi li:hover a {
-        color: white;
-        background-color: #4d4d4d;
-      }
-      ul.navi ul {
-        display: none;
-        position: absolute;
-        background-color: #4d4d4d;
-        width: 1200px;
-      }
-      ul.navi li:hover ul {
-        display: block;
-      }
-      ul.navi li ul li a {
-        color: white;
-        background-color: #4d4d4d;
-      }
-      ul.navi li ul li:hover a {
-        color: black;
-        background-color: #D8D8D8;
-      }
+            /* 네비게이션 메뉴 */
+            #mainMenu {
+                line-height: 40px;
+            }
+            ul {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                background-color: #2d2d2d;
+            }
+            ul.navi li {
+                display: inline;
+                padding: 0px;
+                margin: 0px;
+            }
+            ul.navi li a {
+                color: white;
+                text-decoration: none;
+                padding-top: 6px;       /* hover시 배경색을 알맞게 변경하기 위해 padding 설정 */
+                padding-bottom: 6px;
+                padding-left: 74px;
+                padding-right: 75px;
+                margin: 0px;
+            }
+            ul.navi li:hover a {
+                color: white;
+                background-color: #4d4d4d;
+            }
+            ul.navi ul {
+                display: none;
+                position: absolute;
+                background-color: #4d4d4d;
+                width: 1200px;
+            }
+            ul.navi li:hover ul {
+                display: block;
+            }
+            ul.navi li ul li a {
+                color: white;
+                background-color: #4d4d4d;
+            }
+            ul.navi li ul li:hover a {
+                color: black;
+                background-color: #D8D8D8;
+            }
 
-      /* 본문 */
-      #main {
-        margin-top: 40px;
-        text-align: center;
-        padding: 10px;
-        border-radius: 10px;
-      }
-      #main h1 {
-        margin: 0px;
-      }
-      #main img {
-        width: 250px;
-        height: 250px;
-        border-radius: 100%;
-        margin-top: -140px;
-        position: relative;
-      }
-      #main p {
-        text-align: center;
-      }
-      #main a {
-        color: blue;
-        text-decoration: none;
-      }
-      #main hr {
-        border-width: 2px;
-        margin-top: 160px;
-      }
-      #main table {
-        width: 1200px;
-        margin-top: 10px;
-      }
-      #main tr td {
-        padding: 5px;
-      }
-      #main tr.alt {
-        background-color: #E6E6E6;
-      }
+            /* 본문 */
+            #main {
+                margin-top: 40px;
+                text-align: center;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            #main h1 {
+                margin: 0px;
+            }
+            #main img {
+                width: 250px;
+                height: 250px;
+                border-radius: 100%;
+                margin-top: -140px;
+                position: relative;
+            }
+            #main p {
+                text-align: center;
+            }
+            #main a {
+                color: blue;
+                text-decoration: none;
+            }
+            #main hr {
+                border-width: 2px;
+                margin-top: 160px;
+            }
+            #main table {
+                width: 1200px;
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #main tr td {
+                padding: 5px;
+            }
+            #main tr.alt {
+                background-color: #E6E6E6;
+            }
 
-      /* 페이지 아래 표시 */
-      #bottom {
-        font-size: small;
-        position: absolute;
-        bottom: 0%;
-      }
-      
-    </style>
-  </head>
-  <body>
-    <div id="allContent">
+            /* 페이지 아래 표시 */
+            #bottom {
+                font-size: small;
+                position: absolute;
+                bottom: 0%;
+            }
 
-      <header id="logo">
-        <a href="index.html"><p id="title">Kim Jintae's HomePage</p></a>
-      </header>
+        </style>
+    </head>
+    <body>
+        <div id="allContent">
 
-      <nav id="mainMenu">
-        <ul class="navi">
-          <li><a href="info.html">기본 정보</a></li>
-          <li><a href="school.html">&nbsp;&nbsp;&nbsp;학력&nbsp;&nbsp;&nbsp;</a>
-            <ul>
-              <li><a href="elementary.html">초등학교</a></li>
-              <li><a href="middle.html">중학교</a></li>
-              <li><a href="high.html">고등학교</a></li>
-              <li><a href="university.html">대학교</a></li>
-            </ul>
-	      </li>
-          <li><a href="family.html">가족 관계</a></li>
-          <li><a href="hobby.html">&nbsp;&nbsp;관심사&nbsp;&nbsp;</a>
-            <ul>
-              <li><a href="cube.html">큐브</a></li>
-              <li><a href="baseball.html">야구</a></li>
-              <li><a href="game.html">게임</a></li>
-              <li><a href="taekwondo.html">태권도</a></li>
-            </ul>
-          </li>
-          <li><a href="link.html">&nbsp;&nbsp;&nbsp;링크&nbsp;&nbsp;&nbsp;</a></li>
-        </ul>
-      </nav>
+            <header id="logo">
+                <a href="index.html"><p id="title">Kim Jintae's HomePage</p></a>
+            </header>
 
-      <section id="main">
-        <h1>김진태를 소개합니다!!!</h1>
-        <hr noshade>
-        <img src="image/me.jpg" alt="내 사진" />
-        <table align="center">
-          <tr class="alt">
-            <td>이름: 김진태</td>
-          </tr>
-          <tr>
-            <td>나이: 24살</td>
-          </tr>
-          <tr class="alt">
-            <td>태어난 곳: 서울</td>
-          </tr>
-          <tr>
-            <td>재학중인 학교: <a href="university.html">성균관대학교</a></td>
-          </tr>
-          <tr class="alt">
-            <td>현재 거주지: <a href="https://place.map.daum.net/11259419" target="_blank">성균관대학교 인관</a></td>
-          </tr>
-          <tr>
-            <td>가족 관계: <a href="family.html">바로가기</a></td>
-          </tr>
-          <tr class="alt">
-            <td>취미: 큐브, 게임, 야구</td>
-          </tr>
-        </table>
-      </section>
+            <nav id="mainMenu">
+                <ul class="navi">
+                    <li><a href="info.html">기본 정보</a></li>
+                    <li><a href="school.html">&nbsp;&nbsp;&nbsp;학력&nbsp;&nbsp;&nbsp;</a>
+                        <ul>
+                            <li><a href="elementary.html">초등학교</a></li>
+                            <li><a href="middle.html">중학교</a></li>
+                            <li><a href="high.html">고등학교</a></li>
+                            <li><a href="university.html">대학교</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="family.html">가족 관계</a></li>
+                    <li><a href="hobby.html">&nbsp;&nbsp;관심사&nbsp;&nbsp;</a>
+                        <ul>
+                            <li><a href="cube.html">큐브</a></li>
+                            <li><a href="baseball.html">야구</a></li>
+                            <li><a href="game.html">게임</a></li>
+                            <li><a href="taekwondo.html">태권도</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="link.html">&nbsp;&nbsp;&nbsp;링크&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </nav>
 
-      <footer id="bottom">
-        <p>ⓒ 2018. 10. jintae.kim all rights reserved.</p>
-      </footer>
+            <section id="main">
+                <h1>김진태를 소개합니다!!!</h1>
+                <hr noshade>
+                <img src="image/me.jpg" alt="내 사진" />
+                <table>
+                    <tr class="alt">
+                        <td>이름: 김진태</td>
+                    </tr>
+                    <tr>
+                        <td>나이: 24살</td>
+                    </tr>
+                    <tr class="alt">
+                        <td>태어난 곳: 서울</td>
+                    </tr>
+                    <tr>
+                        <td>재학중인 학교: <a href="university.html">성균관대학교</a></td>
+                    </tr>
+                    <tr class="alt">
+                        <td>현재 거주지: <a href="https://place.map.daum.net/11259419" target="_blank">성균관대학교 인관</a></td>
+                    </tr>
+                    <tr>
+                        <td>가족 관계: <a href="family.html">바로가기</a></td>
+                    </tr>
+                    <tr class="alt">
+                        <td>취미: 큐브, 게임, 야구</td>
+                    </tr>
+                </table>
+            </section>
 
-    </div>
-  </body>
+            <footer id="bottom">
+                <p>ⓒ 2018. 10. jintae.kim all rights reserved.</p>
+            </footer>
+
+        </div>
+    </body>
 </html>

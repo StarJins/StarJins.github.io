@@ -1,183 +1,185 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
-    <title>StarJins's Homepage</title>
-    <style>
+    <head>
+        <title>StarJins's Homepage</title>
+        <style>
 
-      body {
-        font-family: "맑은 고딕", sans-serif;
-	    font-size: 20px;
-	    font-weight: bold;
-	    background-color: #f7f7f7;
-      }
-      #allContent {
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+            body {
+                font-family: "맑은 고딕", sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                background-color: #f7f7f7;
+            }
+            #allContent {
+                width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-      /* 홈페이지 타이틀 */
-      #logo a {
-          text-decoration: none;
-          color: black;
-      }
-      #title {
-        text-align: center;
-        margin: 0px;
-        margin-bottom: 10px;
-        font-size: 50px;
-      }
+            /* 홈페이지 타이틀 */
+            #logo a {
+                text-decoration: none;
+                color: black;
+            }
+            #title {
+                text-align: center;
+                margin: 0px;
+                margin-bottom: 10px;
+                font-size: 50px;
+            }
 
-      /* 네비게이션 메뉴 */
-      #mainMenu {
-        line-height: 40px;
-      }
-      ul {
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-        background-color: #2d2d2d;
-      }
-      ul.navi li {
-        display: inline;
-        padding: 0px;
-        margin: 0px;
-      }
-      ul.navi li a {
-        color: white;
-        text-decoration: none;
-        padding-top: 6px;       /* hover시 배경색을 알맞게 변경하기 위해 padding 설정 */
-        padding-bottom: 7px;
-        padding-left: 74px;
-        padding-right: 75px;
-        margin: 0px;
-      }
-      ul.navi li:hover a {
-        color: white;
-        background-color: #4d4d4d;
-      }
-      ul.navi ul {
-        display: none;
-        position: absolute;
-        background-color: #4d4d4d;
-        width: 1200px;
-      }
-      ul.navi li:hover ul {
-        display: block;
-      }
-      ul.navi li ul li a {
-        color: white;
-        background-color: #4d4d4d;
-      }
-      ul.navi li ul li:hover a {
-        color: black;
-        background-color: #D8D8D8;
-      }
+            /* 네비게이션 메뉴 */
+            #mainMenu {
+                line-height: 40px;
+            }
+            ul {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                background-color: #2d2d2d;
+            }
+            ul.navi li {
+                display: inline;
+                padding: 0px;
+                margin: 0px;
+            }
+            ul.navi li a {
+                color: white;
+                text-decoration: none;
+                padding-top: 6px;       /* hover시 배경색을 알맞게 변경하기 위해 padding 설정 */
+                padding-bottom: 6px;
+                padding-left: 74px;
+                padding-right: 75px;
+                margin: 0px;
+            }
+            ul.navi li:hover a {
+                color: white;
+                background-color: #4d4d4d;
+            }
+            ul.navi ul {
+                display: none;
+                position: absolute;
+                background-color: #4d4d4d;
+                width: 1200px;
+            }
+            ul.navi li:hover ul {
+                display: block;
+            }
+            ul.navi li ul li a {
+                color: white;
+                background-color: #4d4d4d;
+            }
+            ul.navi li ul li:hover a {
+                color: black;
+                background-color: #D8D8D8;
+            }
 
-      /* 본문 */
-      #main {
-        margin-top: 40px;
-      }
-      #main div.content {
-        float: left;
-        width: 580px;
-        height: 700px;
-        border-radius: 10px;
-        background-color: #E6E6E6;
-      }
-      #main div.content table {
-        border-spacing: 10px;
-        margin-top: 20px;
-      }
-      #main div.content a {
-        text-decoration: none;
-        color: blue;
-      }
-      #main div.video {
-        float: right;
-        width: 580px;
-        height: 700px;
-        border-radius: 10px;
-        background-color: #E6E6E6;
-        text-align: center;
-      }
+            /* 본문 */
+            #main {
+                margin-top: 40px;
+            }
+            #main div.content {
+                float: left;
+                width: 580px;
+                height: 700px;
+                border-radius: 10px;
+                background-color: #E6E6E6;
+            }
+            #main div.content table {
+                border-spacing: 10px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #main div.content a {
+                text-decoration: none;
+                color: blue;
+            }
+            #main div.video {
+                float: right;
+                width: 580px;
+                height: 700px;
+                border-radius: 10px;
+                background-color: #E6E6E6;
+                text-align: center;
+            }
 
-      /* 페이지 아래 표시 */
-      #bottom {
-        font-size: small;
-        position: absolute;
-        bottom: 0%;
-      }
+            /* 페이지 아래 표시 */
+            #bottom {
+                font-size: small;
+                position: absolute;
+                bottom: 0%;
+            }
 
-    </style>
-  </head>
-  <body>
-    <div id="allContent">
+        </style>
+    </head>
+    <body>
+        <div id="allContent">
 
-      <header id="logo">
-        <a href="index.html"><p id="title">Kim Jintae's HomePage</p></a>
-      </header>
+            <header id="logo">
+                <a href="index.html"><p id="title">Kim Jintae's HomePage</p></a>
+            </header>
 
-      <nav id="mainMenu">
-        <ul class="navi">
-          <li><a href="info.html">기본 정보</a></li>
-          <li><a href="school.html">&nbsp;&nbsp;&nbsp;학력&nbsp;&nbsp;&nbsp;</a>
-            <ul>
-              <li><a href="elementary.html">초등학교</a></li>
-              <li><a href="middle.html">중학교</a></li>
-              <li><a href="high.html">고등학교</a></li>
-              <li><a href="university.html">대학교</a></li>
-            </ul>
-	      </li>
-          <li><a href="family.html">가족 관계</a></li>
-          <li><a href="hobby.html">&nbsp;&nbsp;관심사&nbsp;&nbsp;</a>
-            <ul>
-              <li><a href="cube.html">큐브</a></li>
-              <li><a href="baseball.html">야구</a></li>
-              <li><a href="game.html">게임</a></li>
-              <li><a href="taekwondo.html">태권도</a></li>
-            </ul>
-          </li>
-          <li><a href="link.html">&nbsp;&nbsp;&nbsp;링크&nbsp;&nbsp;&nbsp;</a></li>
-        </ul>
-      </nav>
+            <nav id="mainMenu">
+                <ul class="navi">
+                    <li><a href="info.html">기본 정보</a></li>
+                    <li><a href="school.html">&nbsp;&nbsp;&nbsp;학력&nbsp;&nbsp;&nbsp;</a>
+                        <ul>
+                            <li><a href="elementary.html">초등학교</a></li>
+                            <li><a href="middle.html">중학교</a></li>
+                            <li><a href="high.html">고등학교</a></li>
+                            <li><a href="university.html">대학교</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="family.html">가족 관계</a></li>
+                    <li><a href="hobby.html">&nbsp;&nbsp;관심사&nbsp;&nbsp;</a>
+                        <ul>
+                            <li><a href="cube.html">큐브</a></li>
+                            <li><a href="baseball.html">야구</a></li>
+                            <li><a href="game.html">게임</a></li>
+                            <li><a href="taekwondo.html">태권도</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="link.html">&nbsp;&nbsp;&nbsp;링크&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </nav>
 
-      <section id="main">
-        <div class="content">
-          <table align="center">
-            <tr>
-              <td>큐브 경력: 대략 14년</td>
-            </tr>
-            <tr>
-              <td>현재 사용 중인 큐브 공식: 프리드리히 공식</td>
-            </tr>
-            <tr>
-              <td><a href="https://cafe.naver.com/cubemania" target="_blank">여러 가지 큐브 공식 알아보기</a></td>
-            </tr>
-            <tr>
-              <td>현재 사용 중인 큐브: <a href="https://cubenjoy.com/product/detail.html?product_no=1384&cate_no=85&display_group=1" target="_blank">궈빙 3x3x3 큐브1 화이트</a></td>
-            </tr>
-            <tr>
-              <td><a href="https://cubenjoy.com/" target="_blank">큐브 사는 곳 바로가기</a></td>
-            </tr>
-            <tr>
-              <td>큐브 기록: 17.78초(12회 평균)</td>
-            </tr>
-            <tr>
-              <td><img src="image/cubeProfile.jpg" alt="랭킹표" /></td>
-            </tr>
-          </table>
+            <section id="main">
+                <div class="content">
+                    <table>
+                        <tr>
+                            <td>큐브 경력: 대략 14년</td>
+                        </tr>
+                        <tr>
+                            <td>현재 사용 중인 큐브 공식: 프리드리히 공식</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://cafe.naver.com/cubemania" target="_blank">여러 가지 큐브 공식 알아보기</a></td>
+                        </tr>
+                        <tr>
+                            <td>현재 사용 중인 큐브: <a href="https://cubenjoy.com/product/detail.html?product_no=1384&cate_no=85&display_group=1" target="_blank">궈빙 3x3x3 큐브1 화이트</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://cubenjoy.com/" target="_blank">큐브 사는 곳 바로가기</a></td>
+                        </tr>
+                        <tr>
+                            <td>큐브 기록: 17.78초(12회 평균)</td>
+                        </tr>
+                        <tr>
+                            <td><img src="image/cubeProfile.jpg" alt="랭킹표" /></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="video">
+                    <p>옛날 영상와 최근 영상</p>
+                    <iframe src="solve.html" width="550" height="600" frameborder="1"></iframe>
+                </div>
+            </section>
+
+            <footer id="bottom">
+                <p>ⓒ 2018. 10. jintae.kim all rights reserved.</p>
+            </footer>
+
         </div>
-        <div class="video">
-          <p>옛날 영상와 최근 영상</p>
-          <iframe src="solve.html" width="550" height="600" frameborder="1"></iframe>
-        </div>
-      </section>
-
-      <footer id="bottom">
-        <p>ⓒ 2018. 10. jintae.kim all rights reserved.</p>
-      </footer>
-
-    </div>
-  </body>
+    </body>
 </html>
